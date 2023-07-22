@@ -36,7 +36,7 @@ The RSA Encryption project provides a simple web application that allows users t
 
 To get started with the project, follow these steps:
 
-1. Clone the repository: `git clone <https://github.com/AMAN-ARABZADEH/RSA_JS>`
+1. Clone the repository: `git clone` [Clone: ](https://github.com/AMAN-ARABZADEH/RSA_JS)
 2. Open the `index.html` file in your web browser.
 
 ## Usage
