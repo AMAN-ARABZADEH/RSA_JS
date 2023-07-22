@@ -3,6 +3,12 @@
 ## Overview
 
 This project demonstrates RSA encryption and decryption using the JSEncrypt library in a web application. The JSEncrypt library is a JavaScript library used for RSA encryption, decryption, and key generation. It allows us to generate an RSA key pair, encrypt a message using the public key, and decrypt a message using the private key. This powerful tool helps secure data communication and ensures the privacy of sensitive information.
+## RSA
+
+RSA is an asymmetric cryptographic algorithm, which means that it involves two separate keys for encryption and decryption, and each party in the communication process possesses its own pair of keys.
+
+Asymmetric cryptography contrasts with symmetric cryptography, where the same key is used for both encryption and decryption. In a symmetric encryption scheme, both the sender and the recipient need to possess and share the same secret key, which can become a logistical challenge, especially when communicating over an insecure channel.
+[RSA Wiki](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 
 ## Table of Contents
 
@@ -19,7 +25,7 @@ This project demonstrates RSA encryption and decryption using the JSEncrypt libr
 
 To implement RSA encryption and decryption, we utilize the JSEncrypt library. Instead of hosting the library on our server, we use a Content Delivery Network (CDN) to load the library. The JSEncrypt library is available on the CDN at:
 
-[https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.3.2/jsencrypt.min.js](https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.3.2/jsencrypt.min.js)
+[https://cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.3.2/jsencrypt.min.js)
 
 ## Introduction
 
