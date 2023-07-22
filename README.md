@@ -42,7 +42,7 @@ The user interface of the application is styled using CSS, with attention to col
 
 ## License
 
-This project is open-source and available under the MIT License. You can find the license details in the `LICENSE` file.
+This project is open-source and available under the MIT License. You can find the license details in the  [MIT License](./LICENSE). file.
 
 ---
 
