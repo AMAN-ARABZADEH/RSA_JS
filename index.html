@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Autor: Aman Arabzadeh
+        Date: 2023-07-22
+        Was inspired by https://travistidwell.com/jsencrypt/demo/
+
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RSA Encryption</title>
+</head>
+<body>
+    <header>
+        <!-- Heading for the page -->
+        <h1>RSA Encryption</h1>
+    </header>
+
+    <section id="choose">
+        <!-- Section for choosing the key size -->
+        <label for="keySize">Choose key size:</label>
+        <select id="keySize">
+            <!-- Key size options for the user to choose from -->
+            <option value="512">512 bits</option>
+            <option value="1024" selected>1024 bits</option>
+            <option value="2048">2048 bits</option>
+            <option value="4096">4096 bits</option>
+        </select>
+    </section>
+    <!-- Showing public and private keys-->
+    <section>
+        <!-- Section for displaying generated public and private keys -->
+        <h2>Generated Keys</h2>
+        <!-- Text area to display the generated public key -->
+        <label for="publicKey">Public Key:</label>
+        <textarea id="publicKey" rows="10" cols="100" readonly></textarea>
+        <!-- Text area to display the generated private key -->
+        <label for="privateKey">Private Key:</label>
+        <textarea id="privateKey" rows="10" cols="100" readonly></textarea>
+    </section>
+
+
+    <section>
+        <!-- Section for encrypting a message -->
+        <h2>Encrypt Message</h2>
+        <!-- Label and textarea for entering the plaintext message -->
+        <label for="plaintext-encrypt">Enter your message to Encrypt:</label>
+        <textarea id="plaintext-encrypt" rows="10" cols="100" ></textarea>
+        <!-- Button to initiate encryption -->
+        <button id="encryptButton">Encrypt</button>
+        <!-- Heading and textarea to display the encrypted result -->
+        <h3>Encrypted Result:</h3>
+        <textarea id="encrypted-result" rows="10" cols="100"  readonly></textarea>
+    </section>
+
+    <section>
+        <!-- Section for decrypting a message -->
+        <h2>Decrypt Message</h2>
+    
+        <!-- Label and textarea for entering the ciphertext message -->
+        <label for="ciphertext-decrypt">Enter your message to Decrypt:</label>
+        <textarea id="ciphertext-decrypt" rows="10" cols="100" ></textarea>
+        <!-- Button to initiate decryption -->
+        <button id="decryptButton">Decrypt</button>
+        <!-- Heading and textarea to display the decrypted result -->
+        <h3>Decrypted Result:</h3>
+        <textarea id="decrypted-result" rows="10" cols="100"  readonly></textarea>
+    </section>
+<!--
+    This script tag loads the JSEncrypt library from a Content Delivery Network (CDN). 
+    The JSEncrypt library is a JavaScript library used for performing RSA encryption, decryption, and key generation. 
+    By using a CDN to load the library, you don't need to host it on your server, and it ensures that the latest version of the library is always used.
+
+    The source URL for the JSEncrypt library on the CDN is: https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.3.2/jsencrypt.min.js
+
+    The JSEncrypt library allows us to generate an RSA key pair, encrypt a message using the public key, and decrypt a message using the private key. 
+    It is a powerful tool for securing data communication and ensuring the privacy of sensitive information.
+
+    The library is open-source and available on GitHub at: https://github.com/travist/jsencrypt/tree/master
+
+    Make sure to visit the provided links to access the library's documentation and to check for any updates or changes to the library.
+
+
+    // https://en.wikipedia.org/wiki/Cdnjs
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.3.2/jsencrypt.min.js"></script>
+<!-- Custom JavaScript file for handling encryption and decryption -->
+<script src="script.js"></script>
+
+</body>
+</html>
